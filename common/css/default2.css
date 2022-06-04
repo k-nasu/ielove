@@ -1,0 +1,743 @@
+@charset "utf-8";
+/* CSS Document */
+
+.listview>*, .btn{
+    padding:12px 0 12px 25px;
+}
+.li-icon-arrow-r {
+    margin-top: -2px;
+}
+
+/*会員限定物件*/
+.listview_inner .imagebox{
+    display: table-cell;
+    margin: 0;
+    padding: 0;
+    width: 100px;
+    float: left;
+}
+.listview_inner .imagebox .bknimage {
+    display: table-cell;
+    vertical-align: middle;
+    text-align: center;
+    height: 100px;
+    width:100px;
+}
+.listview_inner img {
+    max-width: 100px;
+}
+.listview_text.limited {
+    margin-top: 30px;
+}
+#info{
+    width:97%;
+    margin: 10px auto 0;
+    border:1px solid #ccc;
+    -webkit-border-radius: 6px;
+    font-size:80%;
+    padding-top: 42px;
+}
+#info dt{
+    padding:3px 5px;
+    font-weight:bold;
+}
+#info dd{
+    padding:3px 5px;
+    border-bottom:1px solid #ccc;
+    color:#333;
+}
+#info dd a {
+    color: #07519A;
+    text-decoration: underline;
+}
+#info dd img{
+    max-width: 100%!important;
+}
+
+tr:first-child th:first-child,
+tr:first-child td:first-child {
+    -webkit-border-radius: 6px 6px 0 0;
+}
+tr:last-child th:first-child,
+tr:last-child td:first-child {
+    -webkit-border-radius: 0 0 6px 6px;
+}
+
+.partialshow {
+    filter: blur(2px);
+    opacity: 0.8;
+}
+.listview_inner .imagebox.partialimage {
+    position: relative;
+}
+
+.listview_inner .imagebox.partialimage span{
+    position: absolute;
+    top:70px;
+    left: 17px;
+    color: #FFFFFF;
+    font-size: 11px;
+}
+
+/*スライダー*/
+.item a img{
+    max-width: 700px;
+    width: 100%;
+    min-width: 320px;
+    display: block;
+    margin: 0 auto;
+}
+
+/*メイン画像、検索 */
+img.mainimg {
+    max-width: 700px;
+    width:100%;
+    min-width:320px;
+    display:block;
+    margin:0 auto;
+}
+#main_under {
+    padding:10px 0;
+}
+#searchform {
+    width:300px;
+    margin: 0 auto;
+    position:relative;
+}
+#search .field {
+    border: 0 none;
+    border-radius: 4px;
+    color: #616B63;
+    font-size: 12px;
+    padding: 10px 0 10px 5px;
+    width: 98%;
+}
+#search .btn {
+    background: transparent url('/images/ico_sprite.png') no-repeat 8px -288px;
+    padding: 25px 0 0 5px;
+    -webkit-background-size: 52px 1465px;
+    -moz-background-size: 52px 1465px;
+    -o-background-size: 52px 1465px;
+    background-size: 52px 1465px;
+    border: 0 none;
+    cursor: pointer;
+    padding: 25px 0 0 5px;
+    position: absolute;
+    right: -3px;
+    top: 7px;
+    width: 40px;
+}
+.notext {
+    font-size: 0;
+    line-height: 0;
+    text-indent: -4000px;
+}
+
+/*各コンテンツアンカー */
+#contents_navi {
+    background: #FFFFFF;
+    margin: 10px 0 0;
+    text-align: center;
+}
+#contents_navi a {
+    border-left: 2px solid #CCCCCC;
+    font-size: 13px;
+    font-weight: bold;
+    line-height: 50px;
+    padding: 5px 7px;
+}
+#contents_navi a.first {
+    border:none;
+}
+
+/*メイン検索 */
+.container .mainSearch {
+    background:#e1e1e1;
+    padding:10px;
+}
+.mainSearch p,
+.mainSearch ul li {
+    background:#FFF;
+    border: 1px solid #BEBEBE;
+    box-shadow:1px 1px 2px #CCCCCC;
+    font-size: 18px;
+    font-weight: bold;
+    position: relative;
+    z-index: 2;
+}
+.mainSearch p {
+    height: 40px;
+    line-height: 42px;
+}
+.mainSearch ul li {
+    height: 55px;
+    line-height: 55px;
+}
+.mainSearch p:after {
+    background: transparent url('/images/ico_sprite.png') no-repeat 0 -916px;
+    -webkit-background-size: 52px 1465px;
+    -moz-background-size: 52px 1465px;
+    -o-background-size: 52px 1465px;
+    background-size: 52px 1465px;
+    content: "";
+    display: block;
+    height: 24px;
+    position: absolute;
+    right: 10px;
+    top: 23%;
+    width: 20px;
+}
+
+.mainSearch p.non:after {
+    background: transparent url('/images/ico_sprite.png') no-repeat 0 -959px;
+    -webkit-background-size: 52px 1465px;
+    -moz-background-size: 52px 1465px;
+    -o-background-size: 52px 1465px;
+    background-size: 52px 1465px;
+}
+.mainSearch p.active:after {
+    background: transparent url('/images/ico_sprite.png') no-repeat 0 -867px;
+    -webkit-background-size: 52px 1465px;
+    -moz-background-size: 52px 1465px;
+    -o-background-size: 52px 1465px;
+    background-size: 52px 1465px;
+    margin-top: -5px;
+}
+.mainSearch p.line span {
+    padding: 10px 0 10px 50px;
+    background: transparent url('/images/ico_sprite.png') no-repeat 15px -247px;
+    -webkit-background-size: 39px 1099px;
+    -moz-background-size: 39px 1099px;
+    -o-background-size: 39px 1099px;
+    background-size: 39px 1099px;
+}
+.mainSearch p.area span {
+    padding: 10px 0 10px 50px;
+    background: transparent url('/images/ico_sprite.png') no-repeat 18px -296px;
+    -webkit-background-size: 39px 1099px;
+    -moz-background-size: 39px 1099px;
+    -o-background-size: 39px 1099px;
+    background-size: 39px 1099px;
+}
+
+.mainSearch p.schoolSearch span {
+    padding: 10px 0 1px 50px;
+    background: transparent url(/images/schoolicon.png) no-repeat 13px 6px;
+    background-size: 28px 25px;
+}
+
+.mainSearch ul {
+    display:none;
+}
+.mainSearch ul li {
+    padding:0 0 0 50px;
+}
+.mainSearch ul li:after {
+    background: transparent url('/images/ico_sprite.png') no-repeat 0 -1217px;
+    -webkit-background-size: 52px 1465px;
+    -moz-background-size: 52px 1465px;
+    -o-background-size: 52px 1465px;
+    background-size: 52px 1465px;
+    height: 24px;
+    width:24px;
+    content: "";
+    display: block;
+    position: absolute;
+    right:2px;
+    top: 32%;
+}
+.mainSearch ul li a {
+    border-left: 5px solid #C9C9C9;
+    padding: 0 0 0 15px;
+}
+
+/*新着物件 */
+.listview>*, .btn{
+    display:block;
+    border: 1px solid #ccc;
+    border-bottom:none;
+    font-weight: bold;
+    background: #fff;
+}
+#shichaku li:first-child a {
+    background-position: 107px -288px;
+}
+.listview_inner {
+    overflow:hidden;
+    padding:10px;
+    position:relative;
+}
+.listview_inner:after {
+    background: transparent url('/images/ico_sprite.png') no-repeat 5px -956px;
+    -webkit-background-size: 52px 1465px;
+    -moz-background-size: 52px 1465px;
+    -o-background-size: 52px 1465px;
+    background-size: 52px 1465px;
+    height: 24px;
+    width:24px;
+    content: "";
+    display: block;
+    position: absolute;
+    right: 10px;
+    top: 38%;
+}
+
+.listview_inner p.image{
+    width: 100px;
+    float: left;
+    text-align: center;
+}
+.listview_inner p.image .origin {
+    max-width: 100px;
+    max-height: 100px;
+}
+
+.listview_text {
+    float:left;
+    font-size: 12px;
+    font-weight: normal;
+    padding: 0 0 0 10px;
+    line-height: 15px;
+    width: 60%;
+}
+.listview_text h3 {
+    font-weight:normal;
+    margin: 3px 0 0;
+    clear: both;
+}
+.listview_text .type {
+    background: none repeat scroll 0 0 #747474;
+    color: #FFFFFF;
+    display: inline;
+    font-size: 11px;
+    font-weight: normal;
+    padding: 1px 3px;
+    float: left;
+    margin: 0 2px 0 0;
+}
+.listview_text .price {
+    color: #FF0000;
+    font-weight:bold;
+}
+.listview_text .price .changeprice-icon{
+    border: 1px solid;
+    padding: 1px 3px;
+    margin: 0 0 0 5px;
+}
+.listview_text dl dt {
+    color: #9D9D9D;
+    float: left;
+}
+.listview li{
+    padding:0;
+}
+.listview>*:nth-last-of-type(1){
+    border-bottom: 1px solid #ccc;
+    padding:0;
+}
+
+/*NEW・オススメ・MOVIE・コメント アイコン*/
+.listview_text ul{
+    float:left;
+}
+.listview_text li{
+    float: left;
+    color: #FFFFFF;
+    margin: 0 1px;
+    font-size: 11px;
+}
+.listview_text ul .m-new{
+    background: #EE2676;
+    padding: 1px 10px;
+    margin: 0 1px 0 0 !important;
+}
+.listview_text ul .m-osusume{
+    background: #FF7F27;
+    padding: 1px;
+}
+.listview_text ul .m-movie{
+    background: #3F48CC;
+    padding: 1px 7px;
+}
+.listview_text ul .m-comment{
+    background: #22B14C;
+    padding: 1px;
+}
+
+
+/*こだわり */
+.listkodawari {
+    background: none repeat scroll 0 0 #E1E1E1;
+    padding: 10px;
+}
+.listkodawari li {
+    background: none repeat scroll 0 0 #FFFFFF;
+    border: 1px solid #BEBEBE;
+    box-shadow: 1px 1px 3px #CCCCCC;
+    font-size: 20px;
+    border-bottom: 1px solid #CCCCCC;
+    min-height: 70px;
+    padding: 8px 0 8px 10px;
+    position: relative;
+    z-index: 2;
+}
+.listkodawari li h3 {
+    font-size: 18px;
+    font-weight: bold;
+}
+.listkodawari .listview_inner {
+    padding: 0 35px 0 10px;
+    font-size:12px;
+}
+.listkodawari img {
+    float:left;
+}
+
+/*コンテンツ */
+#contents ul {
+    background: #E1E1E1;
+    padding: 10px;
+}
+#contents ul li {
+    background: #FFFFFF;
+    border: 1px solid #BEBEBE;
+    box-shadow: 1px 1px 3px #CCCCCC;
+    height: 70px;
+    line-height: 74px;
+    font-size: 20px;
+    font-weight: bold;
+    position: relative;
+    z-index: 2;
+}
+#contents ul li.staff span {
+    padding: 10px 0 10px 50px;
+    background: transparent url('/images/ico_sprite.png') no-repeat 16px -461px;
+    -webkit-background-size: 52px 1465px;
+    -moz-background-size: 52px 1465px;
+    -o-background-size: 52px 1465px;
+    background-size: 52px 1465px;
+}
+#contents ul li.customer span {
+    padding: 10px 0 10px 50px;
+    background: transparent url('/images/ico_sprite.png') no-repeat 15px -509px;
+    -webkit-background-size: 52px 1465px;
+    -moz-background-size: 52px 1465px;
+    -o-background-size: 52px 1465px;
+    background-size: 52px 1465px;
+}
+#contents ul li.company span {
+    padding: 10px 0 10px 50px;
+    background: transparent url('/images/ico_sprite.png') no-repeat 17px -559px;
+    -webkit-background-size: 52px 1465px;
+    -moz-background-size: 52px 1465px;
+    -o-background-size: 52px 1465px;
+    background-size: 52px 1465px;
+}
+#contents ul li:after {
+    background: transparent url('/images/ico_sprite.png') no-repeat 0 -961px;
+    -webkit-background-size: 52px 1465px;
+    -moz-background-size: 52px 1465px;
+    -o-background-size: 52px 1465px;
+    background-size: 52px 1465px;
+    content: "";
+    display: block;
+    height: 24px;
+    position: absolute;
+    right: 10px;
+    top: 35%;
+    width: 20px;
+}
+
+/*更新情報 クラスinfoはオリジナル用に残す*/
+.info {
+    border-bottom: 1px solid #cccccc;
+    padding: 10px;
+    font-size: 12px;
+}
+.info dt {
+    background: transparent url('/images/ico_sprite.png') no-repeat 0 -1371px;
+    -webkit-background-size: 52px 1465px;
+    -moz-background-size: 52px 1465px;
+    -o-background-size: 52px 1465px;
+    background-size: 52px 1465px;
+    border: medium none;
+    font-size: 13px;
+    padding-left: 10px;
+}
+.info_more {
+    background:#E1E1E1;
+    padding:10px;
+}
+.info dd a {
+    color: #07519A;
+    text-decoration: underline;
+}
+
+.info_more p {
+    background: none repeat scroll 0 0 #FFFFFF;
+    border: 1px solid #BEBEBE;
+    box-shadow: 1px 1px 3px #CCCCCC;
+    border-radius: 4px;
+    font-size: 20px;
+    font-weight: bold;
+    height: 40px;
+    line-height: 42px;
+    padding: 0 10px 0 0;
+    position: relative;
+    text-align: center;
+    z-index: 2;
+}
+.info_more p:after {
+    background: transparent url('/images/ico_sprite.png') no-repeat 0 -960px;
+    -webkit-background-size: 52px 1465px;
+    -moz-background-size: 52px 1465px;
+    -o-background-size: 52px 1465px;
+    background-size: 52px 1465px;
+    content: "";
+    display: block;
+    height: 24px;
+    position: absolute;
+    right: 20px;
+    top: 25%;
+    width: 20px;
+}
+
+.info_more.tap p:after {
+    background: transparent url('/images/ico_sprite.png') no-repeat 0 -960px;
+    -webkit-background-size: 52px 1465px;
+    -moz-background-size: 52px 1465px;
+    -o-background-size: 52px 1465px;
+    background-size: 52px 1465px;
+}
+
+.info_more p a {
+    font-size:18px;
+    padding:0;
+    border:none;
+}
+.info img {
+    max-width: 100%!important;
+}
+
+
+/*更新情報 テンプレ用*/
+.infoList {
+    border-bottom: 1px solid #cccccc;
+    padding: 10px;
+    font-size: 12px;
+}
+
+.infoList dt {
+    background: transparent url('/images/ico_sprite.png') no-repeat 0 -1371px;
+    -webkit-background-size: 52px 1465px;
+    -moz-background-size: 52px 1465px;
+    -o-background-size: 52px 1465px;
+    background-size: 52px 1465px;
+    border: medium none;
+    font-size: 13px;
+    padding-left: 10px;
+}
+
+.infoList dd a {
+    color: #07519A;
+    text-decoration: underline;
+}
+
+.infoList img {
+    max-width: 100%!important;
+}
+
+/*新着お勧め物件*/
+#newlist_2,
+#osusumelist_2{
+    display:none;
+}
+.listtab{
+    margin:0 0 20px 0;
+}
+.listtab li{
+    float: left;
+    width: 50%;
+    text-align: center;
+    border-bottom: 1px solid #ccc;
+    margin:10px 0 0 0;
+    color:#ccc;
+    background: url("/images/search/bg_mobilettl.jpg") 0 0 repeat;
+    position: relative;
+}
+.listtab li span{
+    display:block;
+    padding:10px 0;
+    background:#fff;
+}
+
+.listtab li.active{
+    margin:10px 0 0 0;
+    color:#747474;
+    font-weight: bold;
+    padding-bottom:3px;
+    border-bottom: none;
+}
+.listtab li.active span{
+    padding:10px 0 9px;
+}
+.listtab li.active:after{
+    content: "";
+    position: absolute;
+    bottom: 3px;
+    right: 50%;
+    margin-right:-12px;
+    background: #fff;
+    width: 25px;
+    height: 12px;
+}
+
+.listtab li.active:before {
+    content: "";
+    position: absolute;
+    bottom: -6px;
+    right: 50%;
+    margin-right: -8px;
+    background-image: url("/images/search/bg_mobilettl.jpg");
+    width: 16px;
+    height: 16px;
+    transform: rotate(-45deg);
+}
+#top_blog .blog_listview li,
+.listview li{
+    border-top:none;
+    border-right:none;
+    border-left:none;
+    border-bottom:1px solid #ccc;
+}
+
+/* TOP-ブログ */
+#top_blog .blog_listview_inner {
+    overflow: hidden;
+    position: relative;
+    padding: 10px;
+}
+#top_blog .blog_listview_right {
+    float: left;
+    margin: 0 0 0 2%;
+    padding: 6px 3px;
+}
+#top_blog .blog_img img {
+    max-width: 150px;
+    max-height: 150px;
+}
+#top_blog .blog_listview_left {
+    width: 150px;
+    padding: 6px 0;
+    text-align: center;
+    float: left;
+}
+#top_blog .top_blog_title {
+    padding: 5px 0;
+    font-weight: bold;
+    color: #808080;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+#top_blog .top_blog_contents {
+    font-size: 75%;
+    color: #878787;
+}
+#top_blog .blog_listview_inner:after {
+    background: transparent url('/images/ico_sprite.png') no-repeat 5px -956px;
+    -webkit-background-size: 52px 1465px;
+    -moz-background-size: 52px 1465px;
+    -o-background-size: 52px 1465px;
+    background-size: 52px 1465px;
+    height: 24px;
+    width:24px;
+    content: "";
+    display: block;
+    position: absolute;
+    right: 10px;
+    top: 50%;
+}
+.grad-wrap {
+    position: relative;
+}
+#about-company {
+    padding: 7px 0 5px 10px;
+    border-top: 1px solid #D5D5D5;
+    line-height: 1.3;
+    background: #F0F0F0;
+    font-size: 100%;
+    font-weight: bold;
+}
+.more-btn {
+    width: 95px;
+    padding: 6px;
+    font-size: 12px;
+    color: rgb(148, 148, 148);
+    background-color: transparent;
+    position: absolute;
+    left: 40%;
+    right: 0;
+    bottom: -16px;
+    z-index: 999999;
+    outline: none;
+}
+.more-btn::after {
+    width: 5px;
+    height: 5px;
+    border: 3px solid;
+    border-color:  transparent transparent rgb(148, 148, 148) rgb(148, 148, 148);
+    transform: rotate(-45deg);
+    display: block;
+    float:left;
+    margin-right: 5px;
+    z-index: 99999;
+    content: "";
+}
+.close-btn::after {
+    width: 5px;
+    height: 5px;
+    border: 3px solid;
+    border-color: rgb(148, 148, 148) rgb(148, 148, 148) transparent transparent;
+    transform: rotate(-45deg);
+    display: block;
+    float: left;
+    margin-top: 6px;
+    z-index: 99999;
+    content: "";
+}
+.company-text {
+    font-size: 12px;
+    line-height: 20px;
+    padding-bottom: 20px;
+    margin: 5px 10px 20px 10px;
+    text-align: justify;
+    position: relative;
+    overflow: hidden;
+    height: 74px; /*隠した状態の高さ*/
+}
+.open-contents {
+    overflow: initial;
+    height: auto; /*隠した状態の高さ*/
+}
+.company-text::before {
+    display: block;
+    position: absolute;
+    bottom: -25px;
+    left: 0;
+    width: 100%;
+    height: 40px; /*グラデーションで隠す高さ*/
+    background: -webkit-linear-gradient(top, rgba(255,255,255,0) 0%, rgba(255,255,255,0.9) 30%, rgba(255,255,255,0.9) 30%, #fff 100%);
+    background: linear-gradient(top, rgba(255,255,255,0) 0%, rgba(255,255,255,0.9) 30%, rgba(255,255,255,0.9) 50%, #fff 100%);
+    content: "";
+}
+.company-txt {
+    font-size: 12px;
+    line-height: 20px;
+    margin: 10px 10px 0px 10px;
+    padding-bottom: 10px;
+    text-align: justify;
+    position: relative;
+    overflow: hidden;
+    height: auto; /*隠した状態の高さ*/
+}

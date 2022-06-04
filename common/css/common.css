@@ -1,0 +1,267 @@
+@charset "utf-8";
+
+#contents {
+    padding-bottom:20px;
+}
+
+* html table {
+    font-size: 12px;
+}
+
+
+/************************************************************** フォント **/
+
+* {
+    font-family: "ＭＳ Ｐゴシック", Osaka, "ヒラギノ角ゴ Pro W3", Helvetica, sans-serif;
+}
+
+/*************************************************** mozilaフォントバグ  **/
+
+* {
+    font-family: "\FF2D\FF33\20\FF30\30B4\30B7\30C3\30AF", Osaka, Arial,
+    Helvetica, sans-serif;
+}
+
+/******************************************************* タイプセレクタ **/
+
+body {
+    font-size: 83%;
+    margin: 0;
+    padding: 0;
+    color: #333333;
+    min-width: 950px;
+}
+
+h1, h2, h3, h4, h5, p, ul, ol, li, dl, dt, dd, form ,table{
+    margin: 0;
+    padding: 0;
+    font-size: 100%;
+    font-weight: normal;
+    line-height:1.4;
+    color:#333333;
+}
+
+ul, li {
+    list-style-type: none;
+}
+
+em {
+    font-style: normal;
+    font-weight: bold;
+    color: #C00;
+    text-decoration: none;
+}
+
+img {
+    border: none;
+    vertical-align: bottom;
+}
+
+a {
+    color: #07519A;
+    text-decoration: none;
+}
+
+a:hover{
+    color: #CC0000;
+    text-decoration: underline;
+}
+
+/************************************************************ clearfix **/
+
+.clearfix:after {
+content: url(../images/clearfix.gif);
+display: block;
+clear: both;
+height: 0;
+}
+
+.clearfix { display: inline-block; }
+.clearfix { display: block; }
+
+/************************************************************ 共通部分 **/
+
+#container {
+    margin: auto;
+}
+
+/*contents*/
+#contents {
+    width: 950px;
+    margin: auto;
+    min-height: 300px;
+}
+
+#article {
+    width: 700px;
+    float: right;
+}
+
+#aside {
+    float: left;
+    width: 234px;
+}
+
+#path {
+    margin:0px auto 5px;
+    width: 950px ;
+    padding-top: 10px;
+}
+
+#path a{
+    margin-right:5px;
+    margin-left:5px;
+}
+
+#path strong{
+    margin-right:5px;
+    margin-left:5px;
+}
+
+/*h1_section*/
+.h1_section {
+    background: url(../images/ttl_h1.jpg) no-repeat left center;
+    margin: 0 0 10px;
+    width: 950px;
+    min-height: 40px;
+}
+.h1_section h1 {
+    float: left;
+    font-size: 18px;
+    padding: 0 0 0 7px;
+    margin: 6px 0 0 10px;
+    font-weight: bold;
+    display: inline;
+    border-left: 4px solid #130975;
+    width: 920px;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+.h1_section h2.h2_bkn {
+    float: left;
+    width: 880px;
+    color: #fff;
+    margin: 0;
+    padding: 10px 0;
+    border: none;
+    min-height: 25px;
+    font-size: 18px;
+    font-weight: bold;
+    display: inline;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+.h1_section h2.h2_all {
+    float: left;
+    width: 920px;
+    font-size: 18px;
+    padding: 0 0 0 7px;
+    margin: 6px 0 0 10px;
+    font-weight: bold;
+    display: inline;
+    border-left: 4px solid #130975;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+
+/*h1-section-s*/
+.h1-shot {
+    background: url(../images/bg_h1_shot.jpg) no-repeat left center;
+    width: 700px;
+}
+.h1-shot h1 {
+    width: 435px;
+}
+.h1-shot .sns {
+    float: right;
+    width: 234px;
+}
+
+#header ul{
+    margin-right: 8px;
+}
+
+#header li.history {
+    background: url(../images/bg_head_history.jpg) no-repeat left bottom;
+}
+#header li.history:hover {
+    background: url(../images/bg_head_history_on.jpg) no-repeat left bottom;
+}
+#header li.favorite {
+    background: url(../images/bg_header_favorite.jpg) no-repeat left bottom;
+}
+#header li.favorite:hover {
+    background: url(../images/bg_header_favorite_on.jpg) no-repeat left bottom;
+}
+
+/*トップへ戻る*/
+#backtop {
+    bottom: 30px;
+    margin-left: 950px;
+    outline: 0 none;
+    position: fixed;
+    z-index: 10000;
+}
+
+/*印刷時はヘッダ固定*/
+@media print {
+  #service{
+        position: static!important;
+  }
+}
+
+#fixed_bottom_searchbar{
+    display: none;
+    width: 100%;
+    z-index: 9999;
+    position: fixed;
+    bottom: 0;
+    background-color: rgba(76, 76, 76, 0.7);
+    text-align: center;
+    left: 0;
+}
+
+.search_button_fixedfooter{
+    font-size: 20px;
+    padding: 0px 70px;
+    line-height: 50px;
+    background: linear-gradient(to top, #ddd, #FFF);
+    border-radius: 9px;
+    display: inline-block;
+    margin: 13px 0;
+    color: black;
+    font-family: Meiryo, sans-serif;
+    font-weight: bold;
+    box-shadow: 5px 5px 10px;
+}
+.search_button_fixedfooter:active {
+    box-shadow: 0 0;
+    transform: translateY(2px);
+}
+
+#annualIncome p {
+    display: inline-block;
+}
+
+.footerLinks {
+    max-width: 542px;
+}
+
+.footerSitemapDefaultLayout {
+    max-width: 130px;
+}
+
+.footerCenterLinksLayoutTwo {
+    max-width: 181px;
+}
+
+.footerCenterLinksLayoutThree {
+    max-width: 114px;
+}
+
+.footerCompanyData {
+    max-width: 394px;
+}

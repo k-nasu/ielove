@@ -1,0 +1,491 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!-- saved from url=(0035)http://lab3.codesample.com/1column/ -->
+<html xmlns="http://www.w3.org/1999/xhtml" lang="ja" xml:lang="ja"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta http-equiv="content-script-Type" content="text/javascript">
+    <meta http-equiv="content-style-type" content="text/css">
+    <meta name="keywords" content=",">
+    <meta name="description" content="">
+    <meta name="viewport" content="target-densitydpi=device-dpi, width=device-width, maximum-scale=1.0, user-scalable=yes">
+    <title>▼▼▼▼▼▼▼▼▼</title>
+    <link rel="stylesheet" href="common/css/common.css" media="all" type="text/css">
+    <link rel="stylesheet" href="common/css/aside.css" media="all" type="text/css">
+    <script type="text/javascript" src="common/js/jquery-1.8.2.min.js"></script>
+    <script type="text/javascript" src="common/js/common_library.js"></script>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/top.css" media="all" type="text/css">
+    <link rel="stylesheet" href="css/header.css" media="all" type="text/css">
+    <link rel="stylesheet" href="css/footer.css" media="all" type="text/css">
+
+
+    <style type="text/css">
+
+    #asid-info * {
+        font-family: inherit;
+    }
+
+    #loginPopUp .form{
+        float:left;
+        margin: 3px 0 0px 207px;
+        background-color: #fff;
+        border: 4px solid #3861B1;
+        border-radius: 0px 0px 5px 5px;
+        width:213px;
+        padding: 8px;
+        min-height: 149px;
+        clear: both;
+    }
+
+    #loginPopUp .form p{
+        color: #666;
+        font-size: 90%;
+    }
+
+    #loginPopUp .form input{
+        border: 1px solid #C1C1C1;
+        border-radius: 5px 5px 5px 5px;
+        padding: 5px;
+        width:200px;
+        margin-bottom: 5px;
+    }
+
+    #loginPopUp p.login_btn{
+        text-align: center;
+    }
+
+    #loginPopUp p.login_btn input{
+        border: none;
+    }
+
+    #loginPopUp p.passforget{
+        margin-left: 3px;
+    }
+
+    #loginPopUp p.loading{
+        display:none;
+        text-align: center;
+        padding-top: 60px;
+    }
+    #loginPopUp #password_password{
+        ime-mode: disabled;
+    }
+    #loginPopUp #autoLogin{
+        width:auto;
+    }
+
+            #searchlink{
+                background: #eeeeee;
+                padding: 15px 0;
+            }
+            #searchlink #searchlink-inner{
+                width: 950px;
+                margin: 0 auto;
+            }
+
+            #searchlink #searchlink-inner .link-area{
+                padding: 5px 10px;
+            }
+            #searchlink #searchlink-inner .link-area p{
+                font-weight: bold;
+                float: left;
+                width: 140px;
+                color: #737373;
+            }
+            #searchlink #searchlink-inner .link-area .subhead-row{
+                width: 790px;
+                float: right;
+            }
+            #searchlink #searchlink-inner .link-area .subhead-row li {
+                float: left;
+            }
+            #searchlink #searchlink-inner .link-area .subhead-row li span{
+                display: inline-block;
+                margin: 0 5px 0 0;
+            }
+        
+            #right_side_float_menu {
+                position: fixed;
+                right: 0;
+                top: 158px;
+                z-index:999;
+            }
+            #right_side_float_menu img:hover {
+                opacity: 0.8;
+            }
+        </style>
+    </head>
+    <body id="esbody">
+        <div id="container">
+            <div class="l-header">
+
+              <header id="header">
+                <div class="container">
+                  <div class="header__wrapper">
+                    <h1 class="header__logo">
+                      <img src="images/logo.svg" alt="株式会社ランドハートのロゴ">
+                    </h1>
+                    <button class="header__menu">
+                      <img src="images/bars-solid.svg" alt="ハンバーガメニューボタン">
+                    </button>
+                  </div>
+                  <nav class="header__nav">
+                    <dl class="header__nav-item">
+                      <dt class="header__nav-title accordion header__nav-list-close">
+                        <a href="javascript:void(0)">企業情報</a>
+                      </dt>
+                      <dd>
+                        <ul class="header__nav-list">
+                          <li><a href="javascript:void(0)">会社概要</a></li>
+                          <li><a href="javascript:void(0)">ランドハートの想い</a></li>
+                        </ul>
+                      </dd>
+                    </dl>
+                    <dl class="header__nav-item">
+                      <dt class="header__nav-title accordion header__nav-list-close">
+                        <a href="javascript:void(0)">Business content（事業内容）</a>
+                      </dt>
+                      <dd>
+                        <ul class="header__nav-list">
+                          <li><a href="javascript:void(0)">賃貸管理について</a></li>
+                        </ul>
+                      </dd>
+                    </dl>
+                    <dl class="header__nav-item">
+                      <dt class="header__nav-title accordion header__nav-list-close">
+                        <a href="javascript:void(0)">EXTRA</a>
+                      </dt>
+                      <dd>
+                        <ul class="header__nav-list">
+                          <li><a href="javascript:void(0)">AQUEシリーズ</a></li>
+                        </ul>
+                      </dd>
+                    </dl>
+                    <dl class="header__nav-item">
+                      <dt class="header__nav-title accordion header__nav-list-close">
+                        <a href="javascript:void(0)">仲介会社様&nbsp;&nbsp;&nbsp;&nbsp;専用サイト</a>
+                      </dt>
+                      <dd>
+                        <ul class="header__nav-list">
+                          <li><a href="javascript:void(0)">物件カタログ</a></li>
+                          <li><a href="javascript:void(0)">周辺施設</a></li>
+                        </ul>
+                      </dd>
+                    </dl>
+                    <dl class="header__nav-item">
+                      <dt class="header__nav-title accordion header__nav-list-close">
+                        <a href="javascript:void(0)">くらさぽコネクト</a>
+                      </dt>
+                      <dd>
+                        <ul class="header__nav-list">
+                          <li><a href="javascript:void(0)">会社概要</a></li>
+                          <li><a href="javascript:void(0)">ランドハートの想い</a></li>
+                        </ul>
+                      </dd>
+                    </dl>
+                    <dl class="header__nav-item">
+                      <dt class="header__nav-title accordion header__nav-list-close">
+                        <a href="javascript:void(0)">お問い合わせ</a>
+                      </dt>
+                      <dd>
+                      </dd>
+                    </dl>
+                  </nav>
+                </div>
+              </header>
+
+
+            </div>
+            <!--header-->
+
+            <div id="contents_outer" style="background:#F7F7F7;">
+                <div id="contents" class="clearfix">
+
+                    <!--■メインコンテンツ■■■■■■■■■■■■■■■■■■-->
+
+
+
+
+
+                    <div class="l-page">
+
+
+                      <!-- keyVisualStart -->
+                      <div id="kv"></div>
+                      <!-- keyVisualEnd -->
+
+                      <!-- businessContentStart -->
+                      <div id="business-content">
+                        <div class="business-cotent__bk slideInLeft animate__animated"></div>
+                        <div class="business-cotent__bk slideInRight animate__animated"></div>
+                        <div class="business-cotent__bk slideInLeft animate__animated"></div>
+                        <div class="business-cotent__border"></div>
+                        <div class="business-cotent__border"></div>
+                        <div class="business-cotent__border"></div>
+                        <div class="business-cotent__bk-border"></div>
+                        <div class="business-cotent__bk-border"></div>
+                        <div class="business-cotent__bk-border"></div>
+                        <div class="container">
+                          <h2 class="business-content__heading">Business content<span>事業内容</span></h2>
+                          <div class="business-content__item">
+                            <h3 class="business-content__maintitle slideInLeft animate__animated">賃貸＆売買&nbsp;事業</h3>
+                            <ul class="business-content__categories">
+                              <li class="business-content__category animate__animated">
+                                <div class="business-content__category-img">
+                                  <a href="javascript:void(0)"></a>
+                                  <img src="images/businesscontent1-1_pc.png" alt="住居用賃貸のイメージ">
+                                </div>
+                                <span class="business-content__category-title">借りたい</span>
+                                <img src="images/house.svg" alt="住居用賃貸のイメージロゴ" class="business-content__category-logo">
+                                <span class="business-content__category-text">住居/お部屋探し<span>賃貸</span></span>
+                              </li>
+                              <li class="business-content__category animate__animated">
+                                <div class="business-content__category-img">
+                                  <a href="javascript:void(0)"></a>
+                                  <img src="images/businesscontent1-2_pc.png" alt="事業用賃貸のイメージ">
+                                </div>
+                                <span class="business-content__category-title">借りたい</span>
+                                <img src="images/building.svg" alt="事業用賃貸のイメージロゴ" class="business-content__category-logo">
+                                <span class="business-content__category-text">店舗＆事務所<span>賃貸</span></span>
+                              </li>
+                              <li class="business-content__category animate__animated">
+                                <div class="business-content__category-img">
+                                  <a href="javascript:void(0)"></a>
+                                  <img src="images/businesscontent1-3_pc.png" alt="不動産売買のイメージ">
+                                </div>
+                                <span class="business-content__category-title">売りたい<span>買いたい</span></span>
+                                <img src="images/mansion.svg" alt="不動産売買のイメージロゴ" class="business-content__category-logo">
+                                <span class="business-content__category-text">不動産物件<span>売買</span></span>
+                              </li>
+                            </ul>
+                          </div>
+                          <div class="business-content__item">
+                            <div class="business-content__wrapper">
+                              <img src="images/businesscontent2_pc.png" alt="管理サービス事業のイメージ">
+                              <div class="business-content__text">
+                                <h3 class="business-content__maintitle  slideInRight animate__animated">サービス事業</h3>
+                                <h5 class="business-cotent__subtitle slideInRight animate__animated">【管理サービス】</h5>
+                                <p class="business-cotent__description slideInRight animate__animated">
+                                  ランドハートは、地域に密着したネットワークを活かし、<br>
+                                  賃貸に関わる煩雑な業務を入居者募集から管理運営に至るまで<br>
+                                  オーナー様に代わってお引き受け致します。<br>
+                                  様々な管理プランで、安心の賃貸経営をトータルにサポート致します。<br>
+                                </p>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="business-content__item">
+                            <div class="business-content__wrapper">
+                              <div class="business-content__text">
+                                <h3 class="business-content__maintitle slideInLeft animate__animated">開発事業</h3>
+                                <p class="business-cotent__description slideInLeft animate__animated">
+                                  AQUE（アクエ）シリーズの建設から、テナント＆オフィスビル<br>
+                                  建設まで、地域、社会に貢献する様々な建物をてがけております。
+                                </p>
+                              </div>
+                              <img src="images/businesscontent3_pc.png" alt="不動産開発事業のイメージ">
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <!-- businessContentEnd -->
+                      
+                      <!-- informationStart -->
+                      <div id="information">
+                        <div class="container">
+                          <h2 class="information__heading">Information<span>会社情報</span></h2>
+                          <div class="information__wrapper">
+                            <img src="images/information_pc.png" alt="株式会社ランドハートのイメージ" class="information__image">
+                            <div class="information__text">
+                              <p>誠に勝手ながら、下記の期間を夏季休業とさせていただきます。</p>
+                              <ul>
+                                <li><span>本店</span>2021年08月11日(水)～2021年08月18日(水)</li>
+                                <li><span>千葉店</span>2021年08月13日(金)～2021年08月15日(日)</li>
+                                <li><span>管理部</span>2021年08月13日(金)～2021年08月15日(日)</li>
+                              </ul>
+                              <p>何卒ご了承いただきますよう、お願い申し上げます。</p>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <!-- informationEnd -->
+
+
+
+                    </div><!--l-page-->
+
+
+
+
+
+                </div>
+                <!-- contentsEnd -->
+            </div><!-- contents_outerEnd -->
+            <p style="width:950px;margin:0 auto;"><a href="#esbody" id="backtop" style="display: none;"><img src="../common/images/page_top.png" alt="トップへ戻る"></a></p>
+            <!-- footerStart -->
+
+            <div class="l-footer">
+
+
+
+              <footer id="footer">
+                <ul class="footer__sns">
+                  <li>
+                    <a href="javascript:void(0)" class="footer__instagram">
+                      <img src="images/instagram.svg" alt="instagramのロゴ">
+                      <span>staffのインスタ</span>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="javascript:void(0)" class="footer__youtube">
+                      <img src="images/youtube.svg" alt="youtubeのロゴ">
+                      <span>LANDHERTちゃんねる</span>
+                    </a>
+                  </li>
+                </ul>
+                <div class="footer-information">
+                  <div class="container">
+                    <div class="footer__wrapper">
+                      <ul class="footer__location">
+                        <li class="footer__location-item">
+                          <span>【本店】</span>
+                          <div>
+                            <p class="footer__location-adress">
+                              〒260-0015<br>
+                              千葉県千葉市中央区富士見2-14-6<span></span>ビル千葉中央7F
+                            </p>
+                            <p class="footer__location-phone">TEL：043-223-1234</p>
+                          </div>
+                        </li>
+                        <li class="footer__location-item">
+                          <span>【千葉店】</span>
+                          <div>
+                            <p class="footer__location-adress">
+                              〒260-0015<br>
+                              千葉県千葉市中央区富士見2-7-13<span></span>ランドハートビル1F
+                            </p>
+                            <p class="footer__location-phone">TEL：043-227-3126</p>
+                          </div>
+                        </li>
+                        <li class="footer__location-item">
+                          <span>【管理部】</span>
+                          <div>
+                            <p class="footer__location-adress">
+                              〒260-0015<br>
+                              千葉県千葉市中央区富士見2-7-13<span></span>ランドハートビル4F
+                            </p>
+                            <p class="footer__location-phone">TEL：043-223-6010</p>
+                          </div>
+                        </li>
+                      </ul>
+                      <ul class="footer__businesshour">
+                        <li class="footer__businesshour-item">
+                          <span>営業時間</span>10:00~18:00
+                        </li>
+                        <li class="footer__businesshour-item">
+                          <span>(日･祝日)</span>10:00~17:00
+                        </li>
+                        <li class="footer__businesshour-item">
+                          <span>定休日</span>水曜日
+                        </li>
+                        <li class="footer__businesshour-item">
+                          <span></span>ＧＷ、お盆、年末年始
+                        </li>
+                      </ul>
+                    </div>
+                    <nav class="footer__nav">
+                      <div>
+                        <dl class="footer__nav-item">
+                          <dt class="footer__nav-title">
+                            <a href="javascript:void(0)">賃貸＆売買事業</a>
+                          </dt>
+                          <dd>
+                            <ul class="footer__nav-list">
+                              <li><a href="javascript:void(0)">賃貸住居(お部屋探し)</a></li>
+                              <li><a href="javascript:void(0)">賃貸 店舗＆事務所</a></li>
+                              <li><a href="javascript:void(0)">売買 不動産物件</a></li>
+                            </ul>
+                          </dd>
+                        </dl>
+                        <dl class="footer__nav-item">
+                          <dt class="footer__nav-title">
+                            <a href="javascript:void(0)">サービス事業</a>
+                          </dt>
+                          <dd>
+                            <ul class="footer__nav-list">
+                              <li><a href="javascript:void(0)">賃貸管理について</a></li>
+                              <li><a href="javascript:void(0)">賃貸管理システム</a></li>
+                              <li><a href="javascript:void(0)">空き家管理サービス</a></li>
+                              <li><a href="javascript:void(0)">リノベーション</a></li>
+                            </ul>
+                          </dd>
+                        </dl>
+                        <dl class="footer__nav-item">
+                          <dt class="footer__nav-title">
+                            <a href="javascript:void(0)">開発事業</a>
+                          </dt>
+                          <dd>
+                            <ul class="footer__nav-list">
+                              <li><a href="javascript:void(0)">AQUEシリーズ</a></li>
+                              <li><a href="javascript:void(0)">AQUEシリーズ２</a></li>
+                              <li><a href="javascript:void(0)">貸したい、売りたい</a></li>
+                            </ul>
+                          </dd>
+                        </dl>
+                        <dl class="footer__nav-item">
+                          <dt class="footer__nav-title">
+                            <a href="javascript:void(0)">EXTRA</a>
+                          </dt>
+                          <dd>
+                            <ul class="footer__nav-list">
+                              <li><a href="javascript:void(0)">物件カタログ</a></li>
+                              <li><a href="javascript:void(0)">周辺施設</a></li>
+                            </ul>
+                          </dd>
+                          <dt class="footer__nav-title">
+                            <a href="javascript:void(0)">仲介会社様専用サイト</a>
+                          </dt>
+                          <dt class="footer__nav-title">
+                            <a href="javascript:void(0)">くらさぽコネクト</a>
+                          </dt>
+                        </dl>
+                      </div>
+                      <div>
+                        <dl class="footer__nav-item">
+                          <dt class="footer__nav-title">
+                            <a href="javascript:void(0)">企業情報</a>
+                          </dt>
+                          <dd>
+                            <ul class="footer__nav-list">
+                              <li><a href="javascript:void(0)">会社概要</a></li>
+                              <li><a href="javascript:void(0)">ランドハートの想い</a></li>
+                            </ul>
+                          </dd>
+                        </dl>
+                        <dl class="footer__nav-item">
+                          <dt class="footer__nav-title">
+                            <a href="javascript:void(0)">お問い合わせ</a>
+                          </dt>
+                          <dd>
+                            <ul class="footer__nav-list">
+                              <li><a href="javascript:void(0)">お問い合わせ</a></li>
+                              <li><a href="javascript:void(0)">プライバシーポリシー</a></li>
+                              <li><a href="javascript:void(0)">利用規約</a></li>
+                            </ul>
+                          </dd>
+                        </dl>
+                      </div>
+                    </nav>
+                    <p class="footer__copyright">Copyright(c) landheart All Rights Reserved.</p>
+                  </div>
+                </div>
+              </footer>
+
+                
+            </div><!--footer-->
+        </div>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/3.0.0/jquery.waypoints.min.js"></script>
+        <script type="text/javascript" src="../js/common.js"></script>
+        <script type="text/javascript" src="js/index.js"></script>
+    </body>
+</html>

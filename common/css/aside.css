@@ -1,0 +1,179 @@
+@charset "utf-8";
+
+/*■■共通■■*/
+#aside li {
+    margin: 0 0 5px;
+}
+#side-direct {
+    background: url(/images/bg_side_direct.jpg) no-repeat left bottom;
+    height: 105px;
+}
+#side-mansion {
+    background: url(/images/bg_side_mansion.jpg) no-repeat left bottom;
+    height: 105px;
+}
+#side-direct h3,
+#side-mansion h3 {
+    margin: 0 0 5px;
+}
+
+/*■■フォームの装飾■■*/
+#side-direct label,
+#side-mansion label {
+    float: left;
+    margin: 0 3px 0 5px;
+}
+#side-direct input,
+#side-mansion input {
+    width: 174px;
+    border: 1px solid #999;
+    box-shadow: inset 0 1px 2px #ccc;
+    border-radius: 2px;
+    height: 24px;
+}
+#side-direct input:hover,
+#side-mansion input:hover {
+    background: #f9f9f9;
+}
+#side-direct input:focus,
+#side-mansion input:focus {
+    background: #e5ebf2;
+}
+
+div #payPackageWord {
+    margin: 0 10px 0;
+    word-break: break-all;
+}
+
+/*■■会社概要■■*/
+li#aside-comp div {
+    border: 1px solid #ccc;
+    border-top: none;
+    border-radius: 0 0 5px 5px;
+    background: #fff;
+    padding: 10px 0 0 0;
+}
+li#aside-comp dl {
+    width: 200px;
+    margin: 0 auto 5px;
+    padding: 0 0 2px;
+    border-bottom: 1px dotted #ccc;
+}
+li#aside-comp dt {
+    margin: 0 0 5px;
+    text-align: center;
+}
+li#aside-comp dt img {
+    border: 1px solid #ccc;
+}
+li#aside-comp dd {
+    font-weight: bold;
+    text-align: center;
+}
+li#aside-comp ul {
+    margin: 0 0 0 15px;
+    width: 200px;
+}
+li#aside-comp li {
+    border-bottom: 1px dotted #ccc;
+}
+li#aside-comp li.noborder {
+    border: none;
+    margin: 0;
+}
+li#aside-comp li.free-d {
+    background: url(/images/icn_free-d.jpg) no-repeat left center;
+    padding: 0 0 0 29px;
+}
+
+/*■■更新情報■■*/
+#asid-info > div ,
+#bknhistory > div {
+    border: 1px solid #999;
+    border-top: none;
+    border-radius: 0 0 5px 5px;
+    background: #fff;
+    padding: 10px 5px 5px;
+}
+#asid-info dl,
+#bknhistory dl{
+    border-bottom: 1px dotted #ccc;
+    padding: 0 0 3px;
+    margin: 0 0 3px;
+}
+#asid-info dt,
+#bknhistory dt{
+    background: url(/images/bg_side_infoArw.jpg) no-repeat left center;
+    padding: 0 0 0 15px;
+    font-weight: bold;
+}
+#asid-info dd,
+#bknhistory dd{
+    margin: 0 0 0 15px;
+    word-wrap: break-word;
+}
+#asid-info p.topics,
+#bknhistory p.topics{
+    text-align:right;
+    margin: 3px 3px 0 0;
+}
+#aside #asid-info img{
+    max-width: 100%;
+}
+#bknhistory h3{
+    background: url("/images/search/bg_mobilettl.jpg");
+    color: #fff;
+    font-weight: bold;
+    border-radius: 5px 5px 0 0;
+    padding: 5px 5px 5px 10px;
+    font-size: 13px;
+    letter-spacing: 2px;
+}
+
+/*■■バナー■■*/
+.ssl_bnr {
+    border: 1px solid #ccc;
+    background: #fff;
+    border-radius: 5px;
+    display: inline-block;
+    padding: 5px;
+}
+
+.ssl_bnr img {
+    float: left;
+}
+
+.ssl_bnr p {
+    font-size: x-small;
+    overflow: hidden;
+    padding: 3px 0 3px 11px;
+}
+
+#price_panel table {
+    height: 432px;
+}
+
+#landSalePrice {
+    width: 100px;
+    float: left;
+}
+
+#landSalePrice th {
+    text-align: left;
+    padding-left: 10px;
+}
+
+.businessRentPrice {
+    width: 100px;
+    float: left;
+}
+
+.parkingRentPrice {
+    width: 100px;
+    float: left;
+}
+
+.parkingRentPrice th {
+    text-align: left;
+    padding-left: 10px;
+}

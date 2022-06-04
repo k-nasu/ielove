@@ -1,0 +1,59 @@
+ul#menu {
+	opacity : 0.9;
+	overflow:hidden;
+	z-index : 999;
+}
+
+ul#menu li {
+	border-bottom: 1px solid;
+	margin-bottom: -3px;
+	padding: 0 0 0 5px;
+}
+
+ul#menu li a {
+	background: transparent url(/images/ico_phone.png) no-repeat 90% 0;
+    background-position-y: center;
+	background-size: 26px 33px;
+	display : block;
+	padding : 15px 0;
+}
+
+ul#menu li a span {
+	display: block;
+	width: 80%;
+}
+
+button#phoneIcon {
+	background: transparent url(/images/ico_phone.png) no-repeat 6px 2px;
+	background-size: 26px 33px;
+	background-color: #ffffff;
+	border-radius: 5px;
+	float: right;
+	height : 36px;
+	margin: 0 5px 0 0;
+	width : 36px;
+}
+
+button#phoneIcon:hover, button#phoneIcon2:hover {
+	cursor : pointer;
+}
+
+header #rogo .mail {
+	margin: 0 -1px 0 0;
+}
+
+button#phoneIcon2 {
+	background: transparent url(/images/ico_sprite.png) no-repeat 18px -236px;
+	background-size: 52px 1465px;
+	float: right;
+	width : 50px;
+	height : 36px;
+	z-index : 999;
+}
+
+button#phoneIcon2 span {
+	color: gray;
+	font-weight: bold;
+	margin: 7px 0 0 -22px;
+	position: absolute;
+}
